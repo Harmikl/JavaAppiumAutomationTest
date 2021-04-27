@@ -3,8 +3,10 @@ import org.junit.Test;
 
 public class MainClassTest   {
     @Test
-    public void testGetClassNumber(){
+    public void testGetClassString(){
         MainClass Main=new MainClass();
-        Assert.assertTrue("Value is not more than 45 ", Main.getClassNumber()>45);
+        Assert.assertTrue("String class_string has no text 'Hello' or 'hello' ", Main.getClassString().contains("hello") || Main.getClassString().contains("Hello"));
     }
 }
+
+
