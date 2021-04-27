@@ -3,8 +3,8 @@ import org.junit.Test;
 
 public class MainClassTest   {
     @Test
-    public void testGetLocalNumber(){
+    public void testGetClassNumber(){
         MainClass Main=new MainClass();
-        Assert.assertTrue("Value is not 14 ", Main.getLocalNumber()==14);
+        Assert.assertTrue("Value is not more than 45 ", Main.getClassNumber()>45);
     }
 }
